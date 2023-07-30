@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> task</title>
+        <link href="style.css" rel="stylesheet">
+        
+        </head>
+
+
+
+
+<body>
+
+    <form method="post">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+        <br>
+    
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+        <br>
+    
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+    
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <br>
+    
+        <label for="academic_year">Academic Year:</label>
+        <select id="academic_year" name="academic_year" required>
+            <option value="first_year">First Year</option>
+            <option value="second_year">Second Year</option>
+            <option value="third_year">Third Year</option>
+            <option value="fourth_year">Fourth Year</option>
+        </select>
+        <br>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+    
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br>
+    
+        <input type="submit" value="Register">
+    </form>
+
+    <script>
+        function validateForm() {
+            var firstName = document.getElementById("first_name").value;
+            var lastName = document.getElementById("last_name").value;
+            var password = document.getElementById("password").value;
+            var gender = document.querySelector('input[name="gender"]:checked');
+            var academicYear = document.getElementById("academic_year").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+
+            if (firstName.trim() === "") {
+                alert("Please enter your First Name.");
+                return false;
+            }
+
+            if (lastName.trim() === "") {
+                alert("Please enter your Last Name.");
+                return false;
+            }
+
+            if (password.trim() === "") {
+                alert("Please enter a Password.");
+                return false;
+            }
+
+            if (!gender) {
+                alert("Please select your Gender.");
+                return false;
+            }
+
+            if (academicYear === "") {
+                alert("Please select your Academic Year.");
+                return false;
+            }
+
+            if (email.trim() === "") {
+                alert("Please enter your Email.");
+                return false;
+            }
+
+            if (phone.trim() === "") {
+                alert("Please enter your Phone number.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>

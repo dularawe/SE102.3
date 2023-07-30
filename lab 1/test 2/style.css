@@ -1,0 +1,12 @@
+.bg-imge{
+    background-image: url(bg-3.jpg);
+}
+
+.transparent {
+    background: rgba(255, 255, 255, 7); 
+
+  }
+
+  .center{
+    justify-content: center;
+  }

@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ body {
+  font-family: cursive;
+ }
+ a {
+  text-decoration: none;
+ }
+ li {
+  list-style: none;
+
+ }
+ li:active{
+  background-color: blueviolet;
+ }
+
+ li:hover{
+background-color: aqua;
+
+ }
+
+ .tag:active{
+  background-color: blueviolet;
+ }
+ .tag:focus{
+  background-color: blueviolet;
+ }
+ 
+ .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(51, 51, 51);
+  color: #fff;
+ }
+ 
+ .menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+  
+ }
+
+ .dulara{
+  background-image: url("88.jpg");
+  background-size: cover;
+  height: 500px;
+ 
+ 
+
+ }
+
+
+ .sec1{
+
+  margin: 100;
+ }
+
+
+ .card1{
+ box-shadow: black;
+
+
+
+
+ }
+
+
+ .head1{
+margin: 20;
+font-weight: bold;
+color: blue;
+
+ }

@@ -1,0 +1,22 @@
+.con{
+    padding: 50px;
+}
+
+ol.start {
+    list-style-type: none;
+    counter-reset: item 2;
+  }
+  ol.start li::before {
+    counter-increment: item;
+    content: counter(item, upper-alpha) ". ";
+  }
+  
+
+  ol.rstart {
+    list-style-type: none;
+    counter-reset: item 11;
+  }
+  ol.rstart li::before {
+    counter-increment: item;
+    content: counter(item, lower-roman) ". ";
+  }
